@@ -152,9 +152,9 @@
 			  "authorization": "/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM", 
 			  "noPingback": "true",
 			  "login": {
-			    "sign-in": "/login?rid=READER_ID&url=CANONICAL_URL&resourceURL=CANONICAL_URL&referrerURL=DOCUMENT_REFERRER&returnURL=RETURN_URL",
+			    "sign-in": "/login?rid=READER_ID&url=CANONICAL_URL",
 			    "sign-up": "/register",
-			    "sign-out": "/logout?readerID=READER_ID&returnURL=RETURN_URL"
+			    "sign-out": "/logout?rid=READER_ID&returnURL=RETURN_URL"
 			  },
 			  "authorizationFallbackResponse": {
 			    "error": true,
@@ -164,6 +164,7 @@
 		</script>
 		
 		{{--
+			&resourceURL=CANONICAL_URL&referrerURL=DOCUMENT_REFERRER&returnURL=RETURN_URL
 		<link rel="amphtml" href="https://ampbyexample.com/internationalization/alternate/index.amp.html" />
       	<link rel="alternate" href="https://ampbyexample.com/internationalization/alternate/index.mobile.html" />
       	<link rel="alternate" hreflang="en" href="https://ampbyexample.com/internationalization/alternate/" />
@@ -173,6 +174,7 @@
 		<section class="travel-main-wrapper overflow-hidden" role="main">
 			@include('pub_theme::layouts.partials.navbar')
 			@include('pub_theme::layouts.partials.hero')
+			{{-- --}}
 			<div id="travel-landing-content" class="travel-landing-content relative">
 				@include('pub_theme::layouts.partials.angles')
 				@include('pub_theme::layouts.partials.discover')
@@ -185,6 +187,7 @@
 					@include('pub_theme::layouts.partials.footer')
 				</div>
 			</div>
+			{{-- --}}
 		</section>
 	</body>
 </html>

@@ -97,7 +97,7 @@
   				</template>
   			</li>
   			
-
+  			{{--
   			<li class="ampstart-nav-item " amp-access="loggedIn">	
 				<a amp-access-hide tabindex="0" on="tap:amp-access.login-sign-out" class="button-primary comment-button" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
 					<form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -111,6 +111,7 @@
 					
 				</a>
 			</li>
+			--}}
     	</ul>
 	</nav>
 </header>
