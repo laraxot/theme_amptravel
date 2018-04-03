@@ -25,7 +25,7 @@
 	acForm.showDropdown - whether the autocomplete dropdown is currently visible
 	acForm.isLoading - whether the form is being submitted
 	-->
-@verbatim
+
 <amp-state id="acForm">
 	<script type="application/json">
 		{
@@ -53,7 +53,7 @@
 	<form
         id="form"
         class="form"
-        action="submit.php"
+        action="{{ route('api.container.search.index',['container'=>'restaurant']) }}"
         method="GET"
         target="_top"
         on="
@@ -141,8 +141,8 @@
 					[src]="acData.predictions"
 					items=".">
 					<template type="amp-mustache">
-						<div class="select-option" role="option" tabindex="0" on="tap:AMP.setState({acForm: {showDropdown: false}});" option="{{description}}">
-							{{description}}
+						<div class="select-option" role="option" tabindex="0" on="tap:AMP.setState({acForm: {showDropdown: false}});" option="@{{description}}">
+							@{{description}}
 						</div>
 					</template>
 				</amp-list>
@@ -161,4 +161,3 @@
 <br/><br/><br/>
 </div>
 
-@endverbatim
