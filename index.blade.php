@@ -146,8 +146,8 @@
 			}
 			</script>
 		</amp-state>
-		
-		<script id="amp-access" type="application/json">
+		<amp-state id="amp-access">
+		<script  type="application/json">
 			{
 			  "authorization": "/authorization.php?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM", 
 			  "noPingback": "true",
@@ -162,6 +162,7 @@
 			  }
 			}
 		</script>
+		</amp-state>
 		{{--
 		<link rel="amphtml" href="https://ampbyexample.com/internationalization/alternate/index.amp.html" />
       	<link rel="alternate" href="https://ampbyexample.com/internationalization/alternate/index.mobile.html" />
