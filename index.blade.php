@@ -146,15 +146,15 @@
 			}
 			</script>
 		</amp-state>
-		<amp-state id="amp-access">
-		<script  type="application/json">
+		
+		<script id="amp-access" type="application/json">
 			{
-			  "authorization": "/authorization.php?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM", 
+			  "authorization": "/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM", 
 			  "noPingback": "true",
 			  "login": {
-			    "sign-in": "/login?rid=READER_ID&url=CANONICAL_URL",
+			    "sign-in": "/login?rid=READER_ID&url=CANONICAL_URL&resourceURL=CANONICAL_URL&referrerURL=DOCUMENT_REFERRER&returnURL=RETURN_URL",
 			    "sign-up": "/register",
-			    "sign-out": "/logout"
+			    "sign-out": "/logout?readerID=READER_ID&returnURL=RETURN_URL"
 			  },
 			  "authorizationFallbackResponse": {
 			    "error": true,
@@ -162,7 +162,7 @@
 			  }
 			}
 		</script>
-		</amp-state>
+		
 		{{--
 		<link rel="amphtml" href="https://ampbyexample.com/internationalization/alternate/index.amp.html" />
       	<link rel="alternate" href="https://ampbyexample.com/internationalization/alternate/index.mobile.html" />

@@ -90,15 +90,19 @@
 					Sign up
 				</a>
 			</li>
-			@verbatim
+			
 			<li class="ampstart-nav-item " amp-access="loggedIn">
 				<template amp-access-template type="amp-mustache">
-    			<a class="inline-block">Hello {{user}} </a>
+    			<a class="inline-block">Hello @{{user}} </a>
   				</template>
   			</li>
-  			@endverbatim
+  			
+
   			<li class="ampstart-nav-item " amp-access="loggedIn">	
-				<a amp-access-hide tabindex="0" on="tap:amp-access.login-sign-out" class="button-primary comment-button">
+				<a amp-access-hide tabindex="0" on="tap:amp-access.login-sign-out" class="button-primary comment-button" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+					<form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+    					{{ csrf_field() }}
+					</form>
 					Log Out
 					<svg width="20" height="20" viewBox="0 -300 1792 1892" xmlns="http://www.w3.org/2000/svg">
 						<title>Log Out</title>
