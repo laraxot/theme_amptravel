@@ -140,8 +140,8 @@
 			{
 			  "endpoint": "/autocomplete-api.php?query=",
 			  "emptyAndInitialTemplateJson": [{
-			    "query": "",
-			    "results": []
+				"query": "",
+				"results": []
 			  }]
 			}
 			</script>
@@ -149,27 +149,35 @@
 		
 		<script id="amp-access" type="application/json">
 			{
-			  "authorization": "/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM", 
-			  "noPingback": "true",
-			  "login": {
-			    "sign-in": "/login?rid=READER_ID&url=CANONICAL_URL",
-			    "sign-up": "/register",
-			    "sign-out": "/logout?rid=READER_ID&returnURL=RETURN_URL"
-			  },
-			  "authorizationFallbackResponse": {
-			    "error": true,
-			    "loggedIn": false
-			  }
+				"headers":{
+						"X-CSRF-TOKEN": "{{ csrf_token() }}"
+				},
+				"type":"server",
+				"authorizationFallbackResponse": {"error": true},
+				"authorization": "/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM",
+				"pingback": "/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM",
+				"authorizationTimeout":8000,
+				{{-- "noPingback": "true", --}}
+				"login": {
+					"sign-in": "/login?rid=READER_ID&url=CANONICAL_URL",
+					"sign-up": "/register",
+					"sign-out": "/logout?rid=READER_ID&returnURL=RETURN_URL"
+				},
+				"authorizationFallbackResponse": {
+					"error": true,
+					"loggedIn": false
+				}
+
 			}
 		</script>
 		
 		{{--
 			&resourceURL=CANONICAL_URL&referrerURL=DOCUMENT_REFERRER&returnURL=RETURN_URL
 		<link rel="amphtml" href="https://ampbyexample.com/internationalization/alternate/index.amp.html" />
-      	<link rel="alternate" href="https://ampbyexample.com/internationalization/alternate/index.mobile.html" />
-      	<link rel="alternate" hreflang="en" href="https://ampbyexample.com/internationalization/alternate/" />
-      	<link rel="alternate" hreflang="fr" href="https://ampbyexample.com/internationalization/alternate/fr/" />
-      	<link rel="alternate" hreflang="ja" href="https://ampbyexample.com/internationalization/alternate/ja/" />
+		<link rel="alternate" href="https://ampbyexample.com/internationalization/alternate/index.mobile.html" />
+		<link rel="alternate" hreflang="en" href="https://ampbyexample.com/internationalization/alternate/" />
+		<link rel="alternate" hreflang="fr" href="https://ampbyexample.com/internationalization/alternate/fr/" />
+		<link rel="alternate" hreflang="ja" href="https://ampbyexample.com/internationalization/alternate/ja/" />
 		--}}
 		<section class="travel-main-wrapper overflow-hidden" role="main">
 			@include('pub_theme::layouts.partials.navbar')
