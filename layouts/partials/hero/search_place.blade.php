@@ -53,7 +53,7 @@
 	<form
         id="form"
         class="form"
-        action="{{ route('api.container.search.index',['container'=>'restaurant']) }}"
+        action="{{ route('container.search.index',['container'=>'restaurant']) }}"
         method="GET"
         target="_top"
         on="
