@@ -44,7 +44,7 @@
 	? 'autocomplete-api.php?query=' + encodeURIComponent(acForm.query)
 	: 'autocomplete-api.php'">
 </amp-state>
-<div
+<div 
 	class="travel-hero-search"
 	on="tap:AMP.setState({acForm: {showDropdown: false}})"
 	role="button"
