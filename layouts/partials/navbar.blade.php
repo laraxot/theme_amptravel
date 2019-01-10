@@ -56,12 +56,12 @@
 				
 				<amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown absolute top-0 left-0 right-0 bottom-0">
 					<section>
-						<header><span class="lang-sm lang-lbl-full" lang="{{ App::getLocale() }}"></span></header>
+						<header><span class="lang-sm lang-lbl" lang="{{ App::getLocale() }}"></span></header>
 						<ul class="ampstart-dropdown-items list-reset m0 p0">
 							@foreach (array_keys(config('laravellocalization.supportedLocales')) as $lang)
             					@if ($lang != App::getLocale())
 									<li class="ampstart-dropdown-item"> 
-										<a href="{{ $row->urlLang($lang) }}" class="text-decoration-none"><span class="lang-sm lang-lbl-full" lang="{{ $lang }}"></span></a>
+										<a href="{{ $row->urlLang($lang) }}" class="text-decoration-none"><span class="lang-sm lang-lbl" lang="{{ $lang }}"></span></a>
 									</li>
 								@endif
 							@endforeach
