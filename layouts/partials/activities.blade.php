@@ -1,8 +1,8 @@
 <!-- Activities -->
 <section class="travel-activities pb4 pt3 relative">
   <div class="max-width-3 mx-auto px1 md-px2">
-    <h3 class="bold h1 line-height-2 mb2 md-hide lg-hide" aria-hidden="true">Browse<br>by activity</h3>
-    <h3 class="bold h1 line-height-2 mb2 xs-hide sm-hide center">Browse by activity</h3>
+    <h3 class="bold h1 line-height-2 mb2 md-hide lg-hide" aria-hidden="true">Cosa puoi<br>cercare</h3>
+    <h3 class="bold h1 line-height-2 mb2 xs-hide sm-hide center">Cosa puoi cercare</h3>
   </div>
   <div class="overflow-scroll">
     <div class="travel-overflow-container">
@@ -14,7 +14,7 @@
                 query_type: ['active']
               })
             ">
-            <div class="travel-shadow circle inline-block">
+          <!--  <div class="travel-shadow circle inline-block">
               <div class="travel-activities-activity-icon">
 
 <svg class="travel-icon" viewbox="0 0 70 100"><path fill="currentColor" d="M63.157 50.527h-11.03a9.028 9.028 0 0 1-7.13-3.537c-.78-.97-1.497-1.99-2.14-3.058a.325.325 0 0 0-.297-.123.324.324 0 0 0-.256.196L37.398 55.4a.344.344 0 0 0 .073.38L48.65 66.79a10.925 10.925 0 0 1 3.215 7.238l1.118 17.65c.045 2.225-1.624 4.105-3.82 4.303-2.196.198-4.17-1.352-4.517-3.548l-2.053-16.08a1.358 1.358 0 0 0-.492-.886L31.105 66.64a.317.317 0 0 0-.277-.06.317.317 0 0 0-.218.182l-4.26 9.28a21.584 21.584 0 0 1-3.75 5.635c-1.53 1.66-8.837 10.284-9.574 11.084a4.128 4.128 0 0 1-3.182 1.253c-2.147-.025-3.868-1.8-3.844-3.967 0-.914.3-1.802.858-2.523.555-.716 9.03-12.36 9.247-12.638.216-.282.357-.614.408-.966l1.597-11.13a44.158 44.158 0 0 1 3.7-12.416l6.11-13.06a.344.344 0 0 0-.026-.337.33.33 0 0 0-.303-.144c-.253.027-11.375.68-11.817.728a.981.981 0 0 0-.855.857l-1.526 11.547c-.17 1.49-1.472 2.584-2.957 2.48-1.484-.104-2.625-1.368-2.588-2.87v-12.31c-.028-3.69 2.44-6.928 5.982-7.848 3.51-.88 13.463-2.706 14.595-2.99 3.37-.843 6.93-.426 10.02 1.173l4.477 2.31a10.575 10.575 0 0 1 4.428 4.35c1.022 1.876 3.81 7.288 4 7.638.188.347.52.59.905.664l11.41 2.14a2.94 2.94 0 0 1 2.324 3.142c-.132 1.49-1.35 2.646-2.834 2.682zM43.49 24A9.5 9.5 0 0 1 34 14.492c.004-5.245 4.26-9.494 9.504-9.492a9.5 9.5 0 1 1-.014 19z"></path></svg>              </div>
@@ -38,7 +38,7 @@
             <p class="bold center line-height-4">
               Artistic
             </p>
-          </a>
+          </a> -->
           <a href="travel-results.amp" class="travel-activities-activity travel-type-drinks mx1" on="
               tap:AMP.setState({
                 ui_viewIndex: 1,
@@ -55,14 +55,14 @@
               Drinks
             </p>
           </a>
-          <a href="travel-results.amp" class="travel-activities-activity travel-type-fashion mx1" on="
+         <!--  <a href="travel-results.amp" class="travel-activities-activity travel-type-fashion mx1" on="
               tap:AMP.setState({
                 ui_viewIndex: 1,
                 fields_type: ['fashion'],
                 query_type: ['fashion']
               })
             ">
-            <div class="travel-shadow circle inline-block">
+           <div class="travel-shadow circle inline-block">
               <div class="travel-activities-activity-icon">
 
 <svg class="travel-icon" viewbox="0 0 100 100"><path fill="currentColor" d="M94.93 77.903l-9.12 3.887a1.767 1.767 0 0 1-2.381-1.102L71.505 41.745s3.367 47.975 3.497 49.94a3.511 3.511 0 0 1-3.372 3.732l-13.967.578a3.522 3.522 0 0 1-3.672-3.415c-.048-1.958-1.686-62.796-1.686-62.796a27.9 27.9 0 0 1 .833-7.503l2.597-9.236a.875.875 0 0 0-.855-1.088h-8.76a.88.88 0 0 0-.855 1.09l2.597 9.24a27.87 27.87 0 0 1 .833 7.5s-1.638 60.84-1.687 62.798a3.515 3.515 0 0 1-3.672 3.413L29.37 95.42a3.513 3.513 0 0 1-3.373-3.733c.13-1.965 3.498-49.94 3.498-49.94L17.573 80.688a1.768 1.768 0 0 1-2.382 1.1L6.07 77.904a1.75 1.75 0 0 1-1.006-2.072c.23-.844 12.75-46.918 13.806-50.765a14.047 14.047 0 0 1 7.294-8.85 113.943 113.943 0 0 0 10.233-5.09 21.138 21.138 0 0 0 3.178-3.683A7.067 7.067 0 0 1 44.925 5h11.15a7.067 7.067 0 0 1 5.352 2.444 21.1 21.1 0 0 0 3.18 3.682 114.173 114.173 0 0 0 10.23 5.092 14.037 14.037 0 0 1 7.295 8.85c1.056 3.846 13.575 49.92 13.807 50.764a1.75 1.75 0 0 1-1.01 2.07z"></path></svg>              </div>
@@ -70,14 +70,14 @@
             <p class="bold center line-height-4">
               Fashion
             </p>
-          </a>
+          </a>-->
           <a href="travel-results.amp" class="travel-activities-activity travel-type-food mx1" on="
               tap:AMP.setState({
                 ui_viewIndex: 1,
                 fields_type: ['food'],
                 query_type: ['food']
               })
-            ">
+            "> 
             <div class="travel-shadow circle inline-block">
               <div class="travel-activities-activity-icon">
 
@@ -87,7 +87,7 @@
               Food
             </p>
           </a>
-          <a href="travel-results.amp" class="travel-activities-activity travel-type-music mx1" on="
+         <!--  <a href="travel-results.amp" class="travel-activities-activity travel-type-music mx1" on="
               tap:AMP.setState({
                 ui_viewIndex: 1,
                 fields_type: ['music'],
@@ -118,7 +118,7 @@
             <p class="bold center line-height-4">
               Nature
             </p>
-          </a>
+          </a> -->
           <a href="travel-results.amp" class="travel-activities-activity travel-type-nightlife mx1" on="
               tap:AMP.setState({
                 ui_viewIndex: 1,
@@ -135,7 +135,7 @@
               Nightlife
             </p>
           </a>
-          <a href="travel-results.amp" class="travel-activities-activity travel-type-tours mx1" on="
+        <!--  <a href="travel-results.amp" class="travel-activities-activity travel-type-tours mx1" on="
               tap:AMP.setState({
                 ui_viewIndex: 1,
                 fields_type: ['tours'],
@@ -166,9 +166,9 @@
             <p class="bold center line-height-4">
               Water
             </p>
-          </a>
+          </a>        -->
       
-    </div>
+        </div>
   </div>
 </div></section>
 <!--/ Activities -->

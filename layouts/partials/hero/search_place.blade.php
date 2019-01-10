@@ -153,8 +153,8 @@
 		<input
 			id="submit-button"
 			type="submit"
-			value="Find Restaurants"
-			[value]="acForm.isLoading ? 'Loading...' : 'Find Restaurants'"
+			value="Cerca Ristorante"
+			[value]="acForm.isLoading ? 'Caricamento...' : 'Cerca Ristorante'"
 			class="ampstart-btn travel-input-big rounded center bold white block col-12"
 			[disabled]="acForm.isLoading">
 	</form>
